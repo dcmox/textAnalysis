@@ -24,10 +24,10 @@ var MoxyTA = /** @class */ (function () {
         };
         this._document = document;
     }
-    // get percentage
     MoxyTA.prototype.scan = function () {
         var _this = this;
-        var words = this._document
+        var doc = this._document.toLowerCase();
+        var words = doc
             .replace(/\.|\n|\!|\:|\?|\'|\"|\,|\;/g, ' ')
             .split(' ')
             .filter(function (word) { return word.length !== 0; });
@@ -49,7 +49,6 @@ var MoxyTA = /** @class */ (function () {
             singleQuote: this._document.split('\'').length - 1,
             doubleQuote: this._document.split('"').length - 1
         };
-        var doc = this._document.toLowerCase();
         for (var i = 97; i < 123; i++) {
             this._analysis.alphabetFrequency[String.fromCharCode(i)] = doc.split(String.fromCharCode(i)).length - 1;
         }

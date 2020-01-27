@@ -50,9 +50,9 @@ export class MoxyTA {
         this._document = document
     }
 
-    // get percentage
     public scan(): IMoxyTAResult {
-        const words: string[] = this._document
+        const doc: string = this._document.toLowerCase()
+        const words: string[] = doc
             .replace(/\.|\n|\!|\:|\?|\'|\"|\,|\;/g, ' ')
             .split(' ')
             .filter((word: string) => word.length !== 0)
@@ -74,7 +74,6 @@ export class MoxyTA {
             singleQuote: this._document.split('\'').length - 1,
             doubleQuote: this._document.split('"').length - 1,
         }
-        const doc: string = this._document.toLowerCase()
         for (let i = 97; i < 123; i++) {
             this._analysis.alphabetFrequency[String.fromCharCode(i)] = doc.split(String.fromCharCode(i)).length - 1
         }
