@@ -1,42 +1,42 @@
 {
-  "name": "moxy-ta",
-  "version": "1.0.1",
-  "private": false,
-  "description": "Moxy - Text analysis tool",
-  "main": "moxy-ta.js",
-  "engines": {
-    "node": ">=4.0.0"
-  },
-  "devDependencies": {
-    "typescript": "3.7.2",
-    "@types/jest": "^24.0.24",
-    "@types/sinon": "^7.5.1",
-    "chai": "^4.2.0",
-    "jest": "^24.9.0",
-    "sinon": "^7.5.0",
-    "ts-jest": "^24.2.0",
-    "tslint": "^5.20.1"
-  },
-  "scripts": {
-    "test": "jest tests/*",
-    "build": "npm run build:main",
-    "build:main": "tsc moxy-ta.ts",
-    "testb": "node moxy-ta.js",
-    "watch": "tsc -w moxy-ta.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dcmox/moxy-ta.git"
-  },
-  "keywords": [
-    "moxy",
-    "text",
-    "analysis"
-  ],
-  "author": "Daniel Moxon (dancmox@comcast.net)",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/dcmox/moxy-ta/issues"
-  },
-  "homepage": "https://github.com/dcmox/moxy-ta#readme"
+	"name": "moxy-ta",
+	"version": "1.0.2",
+	"private": false,
+	"description": "Moxy - Text analysis tool",
+	"main": "moxy-ta.js",
+	"engines": {
+		"node": ">=4.0.0"
+	},
+	"devDependencies": {
+		"typescript": "3.7.2",
+		"@types/jest": "^24.0.24",
+		"@types/sinon": "^7.5.1",
+		"chai": "^4.2.0",
+		"jest": "^24.9.0",
+		"sinon": "^7.5.0",
+		"ts-jest": "^24.2.0",
+		"tslint": "^5.20.1"
+	},
+	"scripts": {
+		"test": "jest tests/*",
+		"build": "npm run build:main",
+		"build:main": "tsc moxy-ta.ts",
+		"testb": "node moxy-ta.js",
+		"watch": "tsc -w moxy-ta.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dcmox/moxy-ta.git"
+	},
+	"keywords": [
+		"moxy",
+		"text",
+		"analysis"
+	],
+	"author": "Daniel Moxon (dancmox@comcast.net)",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/dcmox/moxy-ta/issues"
+	},
+	"homepage": "https://github.com/dcmox/moxy-ta#readme"
 }

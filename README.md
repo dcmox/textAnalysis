@@ -1,16 +1,19 @@
 # textAnalysis
+
 Text analysis library for MoxyScript
 
 ## Use
-```typescript
-    const MoxyTA = require('moxy-ta').MoxyTA
 
-    const ta = new testSuite.MoxyTA(doc)
-    const result = ta.scan()
-    console.log(result)
+```typescript
+const MoxyTA = require('moxy-ta')
+
+const ta = new MoxyTA(doc)
+const result = ta.scan()
+console.log(result)
 ```
 
 ## Example output
+
 ```json
   console.log tests/moxy-ta.test.ts:13
     { alphabetFrequency:

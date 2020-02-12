@@ -1,19 +1,23 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-        "tslint:recommended"
-    ],
-    "jsRules": {},
-    "rules": {
-        "quotemark": [true, "single"],
-        "semicolon": false,
-        "triple-equals": true,
-        "no-shadowed-variable": false,
-        "typedef": [true, "call-signature", "parameter", "member-variable-declaration"],
-        "no-any": false,         
-        "no-unsafe-any": false,
-        "no-console": false,
-        "variable-name": [false, "allow-leading-underscore"]
-    },
-    "rulesDirectory": []
+	"defaultSeverity": "error",
+	"extends": ["tslint:recommended"],
+	"jsRules": {},
+	"rules": {
+		"indent": [true, "tabs", 4],
+		"quotemark": [true, "single"],
+		"semicolon": false,
+		"triple-equals": true,
+		"no-shadowed-variable": false,
+		"typedef": [
+			true,
+			"call-signature",
+			"parameter",
+			"member-variable-declaration"
+		],
+		"no-any": false,
+		"no-unsafe-any": false,
+		"no-console": false,
+		"variable-name": [false, "allow-leading-underscore"]
+	},
+	"rulesDirectory": []
 }
